@@ -1,12 +1,15 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
 import Markrting from './components/Markrting';
 
 const App = () => {
   return (
-    <div>
-      <h3 style={{textAlign: 'center'}}>Hi there, in container!</h3>
+    <BrowserRouter>
+      <Header/>
+      <h3 style={{textAlign: 'center'}}>Hi there, welcome to container!</h3>
       <Markrting/>
-    </div>
+    </BrowserRouter>
   )
 }
 
